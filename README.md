@@ -1,4 +1,4 @@
-# instrumentos-computacionales-UNLP
+# Seminario de instrumentos computacionales
 Repositorio con algunos trabajos realizados para el seminario de instrumentos computacionales de la Maestría en Economía de la Universidad Nacional de La Plata, usando principalmente R y Stata.
 
 ## HW 1
