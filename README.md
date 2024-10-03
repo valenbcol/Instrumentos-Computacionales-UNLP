@@ -8,8 +8,8 @@ El archivo HW1-SIC-UNLP.R contiene la resolución de un problema particular: rev
 
 ## Ejercicio 2
 
-En la carpeta "" se encuentra un archivo PDF que contiene los siguientes mapas generados a partir de lo trabajado en clase:
+En la carpeta "HW2-SIC-UNLP.R" se encuentra los archivos .r y .do utilizados para crear los siguientes mapas:
 Mapa de robos en Londres con ggplot (R)
 Mapa de robos en Londres con tmap (R)
 Mapa de robos en Londres con spmap (Stata)
-También están disponibles los archivos .r y .do utilizados para crear los mapas, junto con las explicaciones correspondientes. En la carpeta "data" se encuentran los archivos "mps-recordedcrime-borough.csv", que contiene los datos de crímenes por municipio en Londres para 2011, y "london_sport.zip", que incluye el shapefile con los límites de los municipios, su población en 2001 y la proporción de personas que practicaban deportes en ese año.
+En la carpeta "data" se encuentran los archivos "mps-recordedcrime-borough.csv", que contiene los datos de crímenes por municipio en Londres para 2011, y "london_sport.zip", con los límites de los municipios, su población en 2001 y la proporción de personas que practicaban deportes en ese año.
