@@ -1,6 +1,4 @@
 ############################################################
-#       Seminario de Instrumentos Computacionales
-#               Trabajo Práctico – R
 
 rm(list=ls())
 library(tidyverse)
