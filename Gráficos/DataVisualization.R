@@ -4,7 +4,7 @@
 library(c("ggplot2","tibble","gridExtra","dplyr","Lock5Data","ggthemes","fun","zoo","corrplot","maps","mapproj","ggthemes","purrr"))
 
 # Seteamos directorio de trabajo
-
+setwd("C:/Documents/ME-UNLP/Curso Inicial/Instrumentos Computacionales/TP R")
 
 getwd()
 
