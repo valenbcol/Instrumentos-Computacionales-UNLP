@@ -5,7 +5,7 @@ library(c("ggplot2","tibble","gridExtra","dplyr","Lock5Data","ggthemes","fun","z
 
 # Seteamos directorio de trabajo
 
-setwd("C:/Users/catal/OneDrive - Facultad de Cs Económicas - UBA/UdeSA/Herramientas computacionales/Clase 5")
+
 getwd()
 
 
