@@ -10,7 +10,7 @@ En la carpeta "data" se encuentran los archivos "mps-recordedcrime-borough.csv",
 En el archivo DataVisualization.R se encuentran algunos gráficos y mapas creados como ejercicio de visualización de datos usando buenas prácticas de comunicación.
 
 ## Gráficos
-En esta carpeta se encuentra el archivo DataVisualization.r con los graficos trabajados en clase y corregidos segun los criterios de visualizacion de Schwabish, usando bases de datos de consumo de energía, educación y préstamos bancarios. 
+En esta carpeta se encuentra el archivo DataVisualization.r con los graficos trabajados en clase y corregidos segun los criterios de visualizacion de Schwabish, usando datos de consumo de energía.
 
 El archivo AccesoEduc.R contiene la resolución de un problema particular: revisar este tweet (https://twitter.com/ltornarolli/status/1783220425511534930) y generar con datos de la encuesta de hogares de Argentina el mismo análisis (gráfico), pero comparando tasas de accesos entre hombres y mujeres, en vez de países. El acceso se define como las personas que: (1) declaran asistir actualmente a un establecimiento educativo (variable CH10); (2) cuyo nivel cursado es terciario o más (variable CH12), sobre el total de personas en esa franja de edad.
 - Se provee el código en R para replicar el grafico del tweet pero con el análisis por género solo para Argentina.
