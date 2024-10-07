@@ -1,6 +1,6 @@
 
 
-#Cargamos las librerias necesarias
+# Cargamos las librerias necesarias
 library(c("ggplot2","tibble","gridExtra","dplyr","Lock5Data","ggthemes","fun","zoo","corrplot","maps","mapproj","ggthemes","purrr"))
 
 # Seteamos directorio de trabajo
@@ -43,7 +43,7 @@ pb4
 
 
 
-#Grafico Corregido
+# Grafico Corregido
 df3s <- subset(df3,grade %in% c("A","B","C","D","E","F","G"))
 pb1<-ggplot(df3s,aes(x=loan_amnt))
 pb1
@@ -62,7 +62,7 @@ pb4 + labs(x = "", title= "Monto del préstamo para diferentes grados de crédit
 ---------------------------------------------------------------------------
 # Grafico 2 ---------------------------------------------------------------
 
-#Grafico hecho en clase
+# Grafico consumo de electricidad
 
 dfs <- subset(df,Country %in% c("Germany","India","China","United States"))
 var1<-"Electricity_consumption_per_capita"
