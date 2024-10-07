@@ -1,5 +1,3 @@
-
-
 # Cargamos las librerias necesarias
 library(c("ggplot2","tibble","gridExtra","dplyr","Lock5Data","ggthemes","fun","zoo","corrplot","maps","mapproj","ggthemes","purrr"))
 
@@ -12,55 +10,11 @@ getwd()
 # Cargamos las bases de datos 
 df <- read.csv("data/gapminder-data.csv")
 df2 <- read.csv("data/xAPI-Edu-Data.csv")
-df3 <- read.csv("data/LoanStats.csv")
 
 
 str(df)
 str(df2)
-str(df3)
 
-# “The color palette can be found at: “http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf”
-
-
----------------------------------------------------------------------------
-# Grafico 1 ---------------------------------------------------------------
-
-# Se quiere ver la distribución de las cantidades de los préstamos para diferentes grados de crédito.
-# Objetivo: Trazar el monto del préstamo para diferentes grados de crédito usando el faceting.
-
-#Grafico hecho en clase
-df3s <- subset(df3,grade %in% c("A","B","C","D","E","F","G"))
-pb1<-ggplot(df3s,aes(x=loan_amnt))
-pb1
-pb2<-pb1+geom_histogram(bins=10,fill="cadetblue4")
-pb2
-#Facet_wrap
-pb3<-pb2+facet_wrap(~grade) 
-pb3
-#Free y coordinate for the subplots
-pb4<-pb3+facet_wrap(~grade, scale="free_y")
-pb4 
-
-
-
-# Grafico Corregido
-df3s <- subset(df3,grade %in% c("A","B","C","D","E","F","G"))
-pb1<-ggplot(df3s,aes(x=loan_amnt))
-pb1
-pb2<-pb1+geom_histogram(bins=10,fill="cadetblue4")
-pb2
-#Facet_wrap
-pb3<-pb2+facet_wrap(~grade) 
-pb3
-#Free y coordinate for the subplots
-pb4<-pb3+facet_wrap(~grade, scale="free_y")
-pb4 + labs(x = "", title= "Monto del préstamo para diferentes grados de crédito", 
-           y = "Cantidad de clientes") + theme_minimal()
-
-
-
----------------------------------------------------------------------------
-# Grafico 2 ---------------------------------------------------------------
 
 # Grafico consumo de electricidad
 
@@ -115,13 +69,11 @@ fig2 = fig1 +
 
 fig2
 
----------------------------------------------------------------------------
-# Grafico 3 ---------------------------------------------------------------
 
-## Este grafico muestra la cantidad de peliculas categorizadas segun genero realizadas durante 2013
-### por diferentes estudios cinematograficos
 
-# Grafico hecho en clase
+# Cantidad de peliculas categorizadas según genero realizadas durante 2013 por diferentes estudios cinematograficos
+
+# Grafico 
 dfn <- subset(HollywoodMovies2013, Genre %in% c("Action","Adventure","Comedy","Drama","Romance")
               & LeadStudio %in% c("Fox","Sony","Columbia","Paramount","Disney"))
 p1 <- ggplot(dfn,aes(Genre,WorldGross)) 
@@ -149,8 +101,7 @@ p7b
 
 
 
-# Grafico corregido 1
-## En este queremos ver con mas detenimiento el Gross World, cuanto es generado por cada tipo de pelicula y cuanto por cada estudio cinematrografico
+# Corrección
 
 positions <- c("Action", "Comedy", "Drama", "Adventure", "Romance")
 
@@ -179,25 +130,3 @@ p4 <- p3 +ggtitle("theme_minimal()") +  theme_minimal() +
   )
   
 peliculascorr1 <- grid.arrange(p2,p4,ncol=2) 
-
-
-
-# Grafico corregido 2
-
-peliculascorr2 = ggplot(dfn, aes(x=Genre, fill = LeadStudio)) +
-  geom_bar(position = "stack") + theme_bw() +
-  scale_colour_economist() + 
-  xlab("") + 
-  ylab("") +
-  theme(legend.position = "top") +
-  theme(legend.title = element_blank()) +
-  labs(title= "Peliculas por género y estudio cinematográfico", subtitle = "Cantidad realizada durante 2013") +
-  theme(panel.border = element_rect(colour = "grey", fill = NA),
-        panel.grid.major = element_line(colour = "#E5E7E9", size=0.0001, linetype = "dashed"),
-        panel.grid.minor = element_blank(),
-        panel.background = element_rect(fill="white")
-  )
-
-
-peliculascorr2 
-
