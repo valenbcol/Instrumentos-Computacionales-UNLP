@@ -7,7 +7,7 @@ library(ggplot2)
 library("RColorBrewer")  
 
 #Defino la ruta
-setwd("C:/Documents/ME-UNLP/Curso Inicial/Instrumentos Computacionales/TP R")
+setwd("C:/Documents/ME-UNLP/Curso Inicial/SIC/R")
 
 #Importo la base 
 eph_ind <- read.csv("usu_individual_T322.txt", sep=";", dec=",")
