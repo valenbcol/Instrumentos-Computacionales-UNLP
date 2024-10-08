@@ -8,7 +8,7 @@ x <- c("ggmap", "rgdal", "rgeos", "dplyr", "tmap", "broom")
 lapply(x, library, character.only = TRUE) 
 
 # Definir el directorio de trabajo
-setwd("C:/Clases Herramientas Computacionales/5. Data Visualization/videos_2_3") 
+setwd(""C:/Documents/ME-UNLP/Curso Inicial/SIC/R"") 
 
 # Cargar el shapefile con los municipios de Londres y datos de población
 lnd <- readOGR(dsn = "data/london_sport.shp") 
